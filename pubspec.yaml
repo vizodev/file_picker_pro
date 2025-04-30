@@ -3,9 +3,10 @@ description: "Flutter plugin for selecting files from any devices file library, 
 repository: https://github.com/datadirr/file_picker_pro
 homepage: https://datadirr.com
 version: 2.0.0
+publish_to: 'none'
 
 environment:
-  sdk: ^3.7.2
+  sdk: ">=3.7.0"
   flutter: '>=3.3.0'
 
 dependencies:
@@ -16,11 +17,15 @@ dependencies:
   web: ^1.1.1
   plugin_platform_interface: ^2.1.8
 
-  open_share_plus: ^2.0.0
+  # open_share_plus: ^2.0.0
+  open_share_plus:
+    git:
+      url: https://github.com/datadirr/open_share_plus.git
+      ref: c59dddd5bb0385edc7559bb68acc32eb75c7b970
   mime: ^2.0.0
   image_picker: ^1.1.2
   file_picker: ^9.2.1
-  image_cropper: ^9.0.0
+  image_cropper: ^8.1.0
 
 dev_dependencies:
   flutter_test:
